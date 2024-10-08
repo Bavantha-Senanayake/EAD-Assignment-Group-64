@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    android:padding="5dp"
+    android:background="@drawable/grey_background"
+    android:layout_marginBottom="12dp"
+    android:gravity="center_vertical">
+
+    <!-- User Profile Image -->
+
+    <!-- User Review Details -->
+
+    <ImageView
+        android:id="@+id/imgUserProfile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+                android:background="@drawable/circle_background"
+        android:scaleType="centerCrop" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <!-- User Name -->
+
+
+        <!-- User Comment -->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="340dp"
+            android:layout_height="70dp"
+            android:layout_weight="1">
+
+            <!-- User Name -->
+
+
+            <!-- User Comment -->
+
+            <TextView
+                android:id="@+id/tvUserNasme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:text="John Doe"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvUserComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Great product! Arrived on time and in perfect condition."
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvUserNasme" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="27dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icons8_star_48"
+                tools:layout_editor_absoluteX="219dp" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="27dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toEndOf="@+id/imageView10"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icons8_star_48" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="27dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toEndOf="@+id/imageView12"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icons8_star_48" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="27dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView13"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icons8_star_48" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
